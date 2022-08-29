@@ -34,17 +34,69 @@ The designs were created to the following widths:
 - Family: [Fraunces](https://fonts.google.com/specimen/Fraunces)
 - Weights: 700 */
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+.full-window {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(30, 38%, 92%);
+	height: 100%;
+	width: 100%;
+	
+}
+
 .full-card {
 	display: flex;
 	flex-direction: row;
 	border: 1px solid red;
-}
-
-.card-left {
-
+	max-width: 800px;
 }
 
 .card-right {
+	background-color: hsl(0, 0%, 100%);
+	display: flex;
+	flex-direction: column;
+}
+
+.card-left {
+	max-width: 400px;
+}
+
+.img {
+	max-width: 400px;
+}
+
+.card-right p {
+	font-size: 14px;
+}
+
+.prices {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 
 }
+
+#current-price {
+	color: hsl(158, 36%, 37%);
+}
+
+.btn {
+	background-color: hsl(158, 36%, 37%);
+	color: #fff;
+}
+
+.attribution {
+	background-color: hsl(30, 38%, 92%);
+}
+
+
+
+
 
