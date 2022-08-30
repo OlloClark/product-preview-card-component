@@ -42,11 +42,6 @@ The designs were created to the following widths:
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
-}
-
-
-.full-window {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -54,36 +49,45 @@ body {
 	background-color: hsl(30, 38%, 92%);
 	height: 100%;
 	width: 100%;
-	
+	padding: 5rem;
 }
 
 .full-card {
 	display: flex;
 	flex-direction: row;
-	border: 1px solid red;
 	max-width: 800px;
+	border-radius: 0.5rem;
+}
+
+.card-left {
+	max-width: 400px;
+	border-radius: 0.5rem 0px 0px 0.5rem;
+}
+
+.img {
+	max-width: 400px;
+	border-radius: 0.5rem 0px 0px 0.5rem;
 }
 
 .card-right {
 	background-color: hsl(0, 0%, 100%);
 	display: flex;
 	flex-direction: column;
-}
-
-.card-left {
-	max-width: 400px;
-}
-
-.img {
-	max-width: 400px;
+	padding: 1.5rem;
+	border-radius: 0px 0.5rem 0.5rem 0.5px;
 }
 
 .card-right p {
 	font-size: 14px;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	
+	
 }
 
 .item-name {
 	font-family: 'Fraunces', serif;
+	
 }
 
 .prices {
@@ -94,12 +98,30 @@ body {
 }
 
 #current-price {
+	font-family: 'Fraunces', serif;
 	color: hsl(158, 36%, 37%);
+	padding-top: 0.5rem;
+	padding-right: 1rem;
+}
+
+#discounted-price {
+	padding-top: 0;
+	text-decoration: line-through
 }
 
 .btn {
 	background-color: hsl(158, 36%, 37%);
 	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	height: 3rem;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	border: none;
+
+}
+
+.btn:hover {
+	background-color: hsl(158, 55%, 71%);
 }
 
 .attribution {
