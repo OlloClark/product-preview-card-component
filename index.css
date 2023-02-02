@@ -21,7 +21,9 @@ body {
 	display: flex;
 	flex-direction: row;
 	max-width: 800px;
+	max-height: 550px;
 	border-radius: 0.5rem;
+	overflow: hidden;
 }
 
 .card-left {
@@ -39,6 +41,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	padding: 3em;
+	padding-right: 4em;
+	padding-bottom: 0em;
+	padding-top: 1em;
 	border-radius: 0px 0.5rem 0.5rem 0.5px;
 }
 
@@ -50,7 +55,7 @@ body {
 
 .item-name {
 	font-family: 'Fraunces', serif;
-
+	width: 7em;
 }
 
 .item-category {
@@ -64,6 +69,7 @@ body {
 	font-family: 'Montserrat';
 	color: hsl(228, 12%, 48%);
 	line-height: 1.8em;
+	width: 16em;
 }
 
 .prices {
@@ -83,8 +89,10 @@ body {
 #discounted-price {
 	font-family: 'Montserrat';
 	color: hsl(228, 12%, 48%);
-	padding-top: 0;
-	text-decoration: line-through
+	padding: 1em;
+	padding-left: 0;
+	text-decoration: line-through;
+	margin-top: 0.3em;
 }
 
 .btn {
@@ -95,10 +103,11 @@ body {
 	border-radius: 0.5rem;
 	cursor: pointer;
 	border: none;
+	margin-top: 2em;
 }
 
 .btn:hover {
-	background-color: hsl(158, 55%, 71%);
+	background-color: hsl(118, 47%, 15%)
 }
 
 .attribution {
