@@ -17,8 +17,6 @@ Moving out of bootcamp, it was exciting to start trying to level my CSS abilitie
 * HTML5.
 * Vanilla CSS3.
 
-![mobile component view](./images/mobile-accordion.png)
-
 ### Current goals moving forward:
 
 * Refactor into a React component for ease of reuse.
